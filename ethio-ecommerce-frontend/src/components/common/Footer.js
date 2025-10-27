@@ -80,12 +80,24 @@ const Footer = () => {
         <Row className="align-items-center gy-3">
           <Col md={6}>
             <p className="footer-copy">&copy; {new Date().getFullYear()} EthioEcommerce. Crafted with love in Addis Ababa.</p>
+            <p className="footer-developer small mt-1">
+              Developed by{' '}
+              <a href="https://dagimbekelebunera.vercel.app" target="_blank" rel="noopener noreferrer">
+                dagimbekelebunera.vercel.app
+              </a>
+            </p>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="text-md-end">
             <div className="footer-meta">
-              <span><i className="fas fa-shipping-fast me-2" />Nationwide delivery</span>
-              <span><i className="fas fa-shield-alt me-2" />Secure checkout</span>
-              <span><i className="fas fa-headset me-2" />24/7 support</span>
+              <span className="me-3"><i className="fas fa-envelope me-2" />
+                <a href="mailto:bekeledagim3@gmail.com">bekeledagim3@gmail.com</a>
+              </span>
+              <span className="me-3"><i className="fab fa-github me-2" />
+                <a href="https://github.com/dagdagim" target="_blank" rel="noopener noreferrer">dagdagim</a>
+              </span>
+              <span><i className="fab fa-linkedin-in me-2" />
+                <a href="https://www.linkedin.com/in/dagim-bekele-7a3b6529b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </span>
             </div>
           </Col>
         </Row>
