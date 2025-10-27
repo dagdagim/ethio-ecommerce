@@ -79,7 +79,7 @@ const Footer = () => {
 
         <Row className="align-items-center gy-3">
           <Col md={6}>
-            <p className="footer-copy">&copy; {new Date().getFullYear()} EthioEcommerce. Crafted with love in Addis Ababa.</p>
+            <p className="footer-copy">&copy; {new Date().getFullYear()} EthioEcommerce. Crafted with love by Dagim Bekele.</p>
             <p className="footer-developer small mt-1">
               Developed by{' '}
               <a href="https://dagimbekelebunera.vercel.app" target="_blank" rel="noopener noreferrer">
