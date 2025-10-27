@@ -81,10 +81,25 @@ const RegisterPage = () => {
       return;
     }
 
-    // Validate Ethiopian phone number
-    const phoneRegex = /^(\+251|0)[1-9]\d{8}$/;
-    if (!phoneRegex.test(formData.phone)) {
-      setError('Please enter a valid Ethiopian phone number');
+    // Normalize and validate Ethiopian phone number
+    const isValidEthiopianPhone = (raw) => {
+      if (!raw) return false;
+      // Remove all non-digit characters (spaces, dashes, parentheses, +)
+      const digits = raw.replace(/\D/g, '');
+      let national = digits;
+      // Handle international format '251...' (without plus)
+      if (digits.startsWith('251')) {
+        national = digits.slice(3);
+      } else if (digits.startsWith('0')) {
+        // Local format starting with 0
+        national = digits.slice(1);
+      }
+      // Now national should be 9 digits and not start with 0
+      return /^[1-9]\d{8}$/.test(national);
+    };
+
+    if (!isValidEthiopianPhone(formData.phone)) {
+      setError('Please enter a valid Ethiopian phone number (e.g. +251911234567 or 0911234567)');
       setLoading(false);
       return;
     }
