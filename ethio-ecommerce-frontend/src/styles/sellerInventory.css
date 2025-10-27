@@ -1,0 +1,175 @@
+.seller-inventory-container {
+  background: linear-gradient(135deg, rgba(17, 120, 214, 0.12), rgba(122, 61, 226, 0.1));
+  border-radius: 32px;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
+  box-shadow: 0 25px 55px rgba(17, 24, 39, 0.14);
+}
+
+.seller-inventory-header {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 1.75rem 2.25rem;
+  box-shadow: 0 22px 44px rgba(17, 24, 39, 0.14);
+}
+
+.seller-inventory-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #0f1b46;
+}
+
+.seller-inventory-subtitle {
+  color: rgba(15, 27, 70, 0.7);
+  font-weight: 500;
+}
+
+.seller-inventory-add-button {
+  border-radius: 16px;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 16px 32px rgba(17, 104, 208, 0.28);
+}
+
+.seller-inventory-alert {
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 18px 36px rgba(17, 24, 39, 0.16);
+}
+
+.seller-inventory-card-header {
+  border-bottom: none !important;
+  padding: 1.35rem 1.85rem;
+  background: linear-gradient(135deg, rgba(17, 120, 214, 0.16), rgba(122, 61, 226, 0.18));
+  color: #0f1b46;
+  font-weight: 700;
+}
+
+.seller-inventory-badge {
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+}
+
+.seller-inventory-main-card,
+.seller-inventory-adjust-card,
+.seller-inventory-restock-card {
+  border: none;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 48px rgba(17, 24, 39, 0.14);
+}
+
+.seller-inventory-table-head th {
+  border: none;
+  padding: 0.85rem 1rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  background: rgba(17, 120, 214, 0.08);
+  color: rgba(15, 27, 70, 0.75);
+}
+
+.seller-inventory-table tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.seller-inventory-table tbody tr:hover {
+  background: rgba(17, 120, 214, 0.08);
+  transform: translateY(-2px);
+}
+
+.seller-inventory-table-row.table-primary {
+  box-shadow: inset 0 0 0 2px rgba(17, 120, 214, 0.3);
+}
+
+.seller-inventory-product-name {
+  color: #10163a;
+  font-weight: 600;
+}
+
+.seller-inventory-sku {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.seller-inventory-count {
+  font-weight: 600;
+  color: #0f1b46;
+}
+
+.seller-inventory-progress {
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(17, 120, 214, 0.08);
+}
+
+.seller-inventory-progress .progress-bar {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.seller-inventory-selected-name {
+  color: #0f1b46;
+  font-weight: 700;
+}
+
+.seller-inventory-primary-action {
+  border-radius: 14px;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  box-shadow: 0 16px 36px rgba(25, 135, 84, 0.32);
+}
+
+.seller-inventory-secondary-action {
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.seller-inventory-empty {
+  background: rgba(17, 120, 214, 0.05);
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.seller-inventory-action-btn {
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.12);
+}
+
+@media (max-width: 1199.98px) {
+  .seller-inventory-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .seller-inventory-container {
+    padding: 2.5rem;
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .seller-inventory-container {
+    padding: 1.75rem;
+    border-radius: 24px;
+  }
+
+  .seller-inventory-card-header {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .seller-inventory-table-head th {
+    padding: 0.7rem 0.85rem;
+  }
+}

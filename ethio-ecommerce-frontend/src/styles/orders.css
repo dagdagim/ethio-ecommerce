@@ -1,0 +1,48 @@
+/* Orders page styles - glassy / modern feel */
+.orders-page {
+  --card-bg: rgba(255,255,255,0.72);
+  --glass-shadow: 0 8px 30px rgba(8,15,52,0.08);
+  --accent: linear-gradient(90deg,#6a11cb,#2575fc);
+}
+
+.page-header h1 { font-weight:700; }
+.page-header .filter-select { min-width:200px; border-radius:8px; }
+
+.empty-state .empty-illustration{ font-size:64px; opacity:0.9; }
+.empty-state h4{ font-weight:600; }
+
+.order-card{ background:var(--card-bg); box-shadow:var(--glass-shadow); border-radius:12px; overflow:hidden }
+.order-table th, .order-table td{ vertical-align:middle; padding:16px; }
+.order-row{ transition:background .15s ease, transform .08s ease; }
+.order-row:hover{ background:rgba(0,0,0,0.02); transform:translateY(-2px); }
+
+.items-inline{ display:flex; align-items:center; flex-wrap:wrap }
+.item-mini{ align-items:center }
+.item-thumb{ width:48px; height:48px; object-fit:cover; border-radius:8px; margin-right:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06);} 
+.item-name{ max-width:150px; }
+
+.tracking-sn{ font-size:0.85rem }
+.actions-col .btn{ border-radius:8px }
+
+/* Tracking modal */
+.modal.dialog-tracking,
+.modal.tracking-modal { }
+.modal .modal-content.tracking-modal, .tracking-modal .modal-content{ border-radius:12px; padding:0; }
+.tracking-modal .modal-content{ background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(249,250,252,0.92)); border:none; }
+.tracking-modal .modal-header{ border-bottom:none; }
+.tracking-modal-body{ padding:20px 24px; }
+
+.tracking-timeline{ display:flex; flex-direction:column; gap:14px; }
+.tracking-step{ display:flex; gap:12px; align-items:flex-start; padding:10px; border-radius:8px; }
+.tracking-step .step-icon{ font-size:20px; margin-top:4px; }
+.tracking-step.completed{ background:linear-gradient(90deg, rgba(37,117,252,0.06), rgba(106,17,203,0.03)); }
+.tracking-step.current{ background:rgba(37,117,252,0.04); }
+.tracking-step.cancelled{ background:rgba(255,235,238,0.6); }
+.tracking-step.returned{ background:rgba(255,249,230,0.7); }
+.tracking-step .step-content .fw-semibold{ font-weight:600; }
+
+@media (max-width: 767px){
+  .item-name{ max-width:100px }
+  .item-thumb{ width:40px; height:40px }
+  .page-header{ gap:12px }
+}

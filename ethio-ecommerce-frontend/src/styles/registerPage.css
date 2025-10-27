@@ -1,0 +1,228 @@
+.register-page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(73, 0, 112, 0.09), rgba(0, 126, 167, 0.08)) no-repeat,
+    radial-gradient(circle at top right, rgba(0, 142, 204, 0.18), transparent 55%),
+    radial-gradient(circle at 20% 80%, rgba(247, 198, 0, 0.18), transparent 50%),
+    #f7f8fc;
+}
+
+.register-hero {
+  padding: 5rem 1rem 2rem;
+  max-width: 860px;
+}
+
+.register-pill {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: rgba(17, 120, 214, 0.12);
+  color: #0b5ed7;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.register-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #1b1b3a;
+  margin-bottom: 0.75rem;
+}
+
+.register-subtitle {
+  font-size: 1rem;
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(27, 27, 58, 0.75);
+}
+
+.register-container {
+  margin-top: -1.5rem;
+  padding-bottom: 4rem;
+}
+
+.register-card {
+  border: none;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 45px rgba(17, 24, 39, 0.12);
+}
+
+.register-card-title {
+  font-weight: 700;
+  color: #13132b;
+}
+
+.form-section {
+  border-radius: 22px;
+  padding: 1.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.form-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 28px rgba(15, 73, 160, 0.12);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #1168d0, #7a3de2);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(17, 104, 208, 0.2);
+}
+
+.section-title {
+  font-weight: 600;
+  color: #141432;
+}
+
+.section-subtitle {
+  color: rgba(20, 20, 50, 0.68);
+  letter-spacing: 0.02em;
+}
+
+.info-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(17, 120, 214, 0.1);
+  color: rgba(17, 24, 39, 0.78);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(17, 120, 214, 0.2);
+}
+
+.kicker-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f7c600, #ef6f3f);
+}
+
+.address-guidelines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.guideline-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(122, 61, 226, 0.12);
+  color: #4c2aa1;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(122, 61, 226, 0.25);
+  position: relative;
+}
+
+.guideline-chip::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #7a3de2;
+}
+
+.address-card-tip {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(17, 120, 214, 0.12), rgba(122, 61, 226, 0.12));
+  border: 1px dashed rgba(17, 120, 214, 0.35);
+  color: rgba(20, 20, 50, 0.78);
+  font-weight: 500;
+  text-align: center;
+}
+
+.register-submit {
+  background: linear-gradient(135deg, #1168d0, #7a3de2);
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.95rem 1.5rem;
+  box-shadow: 0 18px 32px rgba(17, 104, 208, 0.28);
+}
+
+.register-submit:hover,
+.register-submit:focus {
+  background: linear-gradient(135deg, #0f5abb, #6a2fd2);
+  box-shadow: 0 22px 36px rgba(17, 104, 208, 0.3);
+}
+
+@media (max-width: 991.98px) {
+  .form-section {
+    padding: 1.5rem;
+  }
+
+  .register-card {
+    border-radius: 20px;
+  }
+
+  .register-hero {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .section-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+
+  .info-kicker {
+    margin-top: 1rem;
+  }
+
+  .address-card-tip {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .register-hero {
+    padding-top: 3.5rem;
+  }
+
+  .register-title {
+    font-size: 1.9rem;
+  }
+
+  .register-card-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,66 @@
+.loading-spinner-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, rgba(17, 120, 214, 0.08), rgba(122, 61, 226, 0.08));
+  border-radius: 32px;
+}
+
+.loading-spinner-card {
+  position: relative;
+  border-radius: 28px;
+  padding: 2.75rem 2.5rem;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 48px rgba(17, 24, 39, 0.14);
+}
+
+.loading-spinner-ring {
+  width: 86px;
+  height: 86px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #1168d0 0%, #7a3de2 100%);
+  box-shadow: 0 18px 32px rgba(17, 104, 208, 0.28);
+}
+
+.loading-spinner-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.loading-spinner-message {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f1b46;
+}
+
+.loading-spinner-subtext {
+  display: block;
+  color: rgba(15, 27, 70, 0.65);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 575.98px) {
+  .loading-spinner-card {
+    padding: 2.25rem 1.85rem;
+    border-radius: 24px;
+  }
+
+  .loading-spinner-ring {
+    width: 74px;
+    height: 74px;
+  }
+
+  .loading-spinner-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
