@@ -1,1 +1,32 @@
+/* Basic contact page styles */
+.contact-page {
+  min-height: 60vh;
+}
+
+.contact-page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-page p {
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.contact-page a {
+  color: #0d6efd; /* bootstrap primary */
+  text-decoration: none;
+}
+
+.contact-page a:hover {
+  text-decoration: underline;
+}
+
+.contact-developer {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-page h1 { font-size: 2.25rem; }
+}
 
